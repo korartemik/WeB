@@ -3,63 +3,172 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Корчагин Артём">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Главная страница</title>
 </head>
 <body>
 <div class = 'header'>
     <img class="logo" src="img/pirates.png" alt="logo">
-    <h1> Смотртеть, скачать онлайн без смс и регистрации</h1>
+    <h1> Смотреть, скачать онлайн без смс и регистрации</h1>
 </div>
-<ul class="nav">
-    <li><a href="#">Русский фильм</a></li>
-    <li><a href="#">Русский сериал</a></li>
-    <li><a href="#">НеРусский фильм</a></li>
-    <li><a href="#">НеРусский сериал</a></li>
-</ul>
 <div class="based">
     <main>
         <div class="based-header">
             <header><h2>Фильмы и сериалы</h2></header>
+            <ul class="nav">
+                <li><a href="#rusFilm">Русский фильм</a></li>
+                <li><a href="#rusSerial">Русский сериал</a></li>
+                <li><a href="#noRusFilm">НеРусский фильм</a></li>
+                <li><a href="#noRusSerial">НеРусский сериал</a></li>
+            </ul>
         </div>
-        <section>
-            <h4>Русский фильм</h4>
-            <ul>
-                <li><a href="https://disk.yandex.ru/d/GP9IRGCB4B-WsQ">В бой идут одни старики</a></li>
-                <li><a href="https://disk.yandex.ru/d/H3_T1LaC5qyU2w">Москва слезам не верит</a></li>
-                <li><a href="https://disk.yandex.ru/d/s0NhVrrf2W3VlQ">Похищение Савой</a></li>
-                <li><a href="https://disk.yandex.ru/d/VDcfw_acbbRFKA">Свой среди чужих, чужой среди своих</a></li>
-            </ul>
+        <section class="type">
+            <h3 id="rusFilm">Русский фильм</h3>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="https://disk.yandex.ru/d/GP9IRGCB4B-WsQ">
+                        <img src="img/posters/vBoiIdut.jpg" alt="Что-то пошло не так..." width="600" height="400">
+                    </a>
+                    <div class="desc">В бой идут одни старики</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="https://disk.yandex.ru/d/H3_T1LaC5qyU2w">
+                        <img src="img/posters/mosc.jpg" alt="Что-то пошло не так..." width="600" height="400">
+                    </a>
+                    <div class="desc">Москва слезам не верит</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="https://disk.yandex.ru/d/s0NhVrrf2W3VlQ">
+                        <img src="img/posters/poh.jfif" alt="Что-то пошло не так..." width="600" height="400">
+                    </a>
+                    <div class="desc">Похищение Савой</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="https://disk.yandex.ru/d/VDcfw_acbbRFKA">
+                        <img src="img/posters/svoi.jfif" alt="Что-то пошло не так..." width="600" height="400">
+                    </a>
+                    <div class="desc">Свой среди чужих, чужой среди своих</div>
+                </div>
+            </div>
+
         </section>
-        <section>
-            <h4>Русский сериал</h4>
-            <ul>
-                <li><a href="https://rutracker.org/forum/viewtopic.php?t=6233195">Два холма</a></li>
-                <li><a href="https://disk.yandex.ru/d/H3_T1LaC5qyU2w">Водоворот</a></li>
-                <li><a href="https://disk.yandex.ru/d/s0NhVrrf2W3VlQ">Топи</a></li>
-                <li><a href="https://disk.yandex.ru/d/VDcfw_acbbRFKA">Закрыть гештальт</a></li>
-            </ul>
+        <section class="type">
+            <h3 id="rusSerial"> Русский сериал</h3>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="#">
+                        <img src="img/wait.jpg" alt="Что-то пошло не так..." width="600" height="400">
+                    </a>
+                    <div class="desc">Два холма</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="#">
+                        <img src="img/wait.jpg" alt="Что-то пошло не так..." width="600" height="400">
+                    </a>
+                    <div class="desc">Водоворот</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="#">
+                        <img src="img/wait.jpg" alt="Что-то пошло не так..." width="600" height="400">
+                    </a>
+                    <div class="desc">Топи</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="#">
+                        <img src="img/wait.jpg" alt="Что-то пошло не так..." width="600" height="400">
+                    </a>
+                    <div class="desc">Закрыть гештальт</div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h4>НеРусский фильм</h4>
-            <ul>
-                <li><a href="https://disk.yandex.ru/d/GP9IRGCB4B-WsQ">Джентельмены</a></li>
-                <li><a href="https://disk.yandex.ru/d/H3_T1LaC5qyU2w">Зелёная книга</a></li>
-                <li><a href="https://disk.yandex.ru/d/s0NhVrrf2W3VlQ">1+1</a></li>
-                <li><a href="https://disk.yandex.ru/d/VDcfw_acbbRFKA">Я иду искать</a></li>
-            </ul>
+        <section class="type">
+            <h3 id="noRusFilm">НеРусский фильм</h3>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="img/wait.jpg" alt="Что-то пошло не так..." width="600" height="400">
+                        </a>
+                        <div class="desc">Джентельмены</div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="img/wait.jpg" alt="Что-то пошло не так..." width="600" height="400">
+                        </a>
+                        <div class="desc">Зелёная книга</div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="img/wait.jpg" alt="Что-то пошло не так..." width="600" height="400">
+                        </a>
+                        <div class="desc">1+1</div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="img/wait.jpg" alt="Что-то пошло не так..." width="600" height="400">
+                        </a>
+                        <div class="desc">Я иду искать</div>
+                    </div>
+                </div>
+
         </section>
-        <section>
-            <h4>НеРусский сериал</h4>
-            <ul>
-                <li><a href="https://disk.yandex.ru/d/GP9IRGCB4B-WsQ">Карточный домик</a></li>
-                <li><a href="https://disk.yandex.ru/d/H3_T1LaC5qyU2w">Игра престолов</a></li>
-                <li><a href="https://disk.yandex.ru/d/s0NhVrrf2W3VlQ">Во все тажкие</a></li>
-                <li><a href="https://disk.yandex.ru/d/VDcfw_acbbRFKA">Чёрное зеркало</a></li>
-            </ul>
+        <section class="type">
+            <h3 id="noRusSerial">НеРусский сериал</h3>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="img/wait.jpg" alt="Что-то пошло не так..." width="600" height="400">
+                        </a>
+                        <div class="desc">Карточный домик</div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="img/wait.jpg" alt="Что-то пошло не так..." width="600" height="400">
+                        </a>
+                        <div class="desc">Игра престолов</div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="img/wait.jpg" alt="Что-то пошло не так..." width="600" height="400">
+                        </a>
+                        <div class="desc">Во все тяжкие</div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="#">
+                            <img src="img/wait.jpg" alt="Что-то пошло не так..." width="600" height="400">
+                        </a>
+                        <div class="desc">Чёрное зеркало</div>
+                    </div>
+                </div>
+            
         </section>
     </main>
 </div>
 <div class="footer">
+    <h2>-</h2>
     <p>По словам <cite>Того самого Чела</cite> —
         <q>Старому Морскому волку нет забот до подписок на Netflix!</q></p>
     <h4>По вопросом обращаться</h4>
