@@ -1,0 +1,10 @@
+div.header img {
+    float: left;
+    padding: 20px;
+}
+div.header{
+    min-width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    display: flex;
+}

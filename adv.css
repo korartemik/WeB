@@ -1,0 +1,10 @@
+div.adv{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+div.adv img{
+    width: 100%;
+    height: 100px;
+    float: left;
+}
