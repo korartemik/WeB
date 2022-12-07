@@ -5,9 +5,10 @@
   <meta name="author" content="Корчагин Артём">
   <link rel="stylesheet" href="header.css" type="text/css">
   <link rel="stylesheet" href="based-header.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="stylesheet" href="adv.css" type="text/css">
   <script src="scripts/cookies.js"></script>
-  <title>Not Russian Films</title>
+  <title>Буду Смотреть</title>
 </head>
 <body>
 <div class = 'header'>
@@ -27,22 +28,40 @@
         <li><a href="/WeB/RusSerial.html" class="non-active">Русский сериал</a></li>
         <li><a href="/WeB/NotRusFilm.html" class="non-active">НеРусский фильм</a></li>
         <li><a href="/WeB/NotRusSerial.html" class="non-active">НеРусский сериал</a></li>
-          <li><a href="/WeB/WillWatch.html" class="non-active">Буду Смотреть</a></li>
+        <li><a href="/WeB/WillWatch.html" class="non-active">Буду Смотреть</a></li>
       </ul>
     </div>
     <script src="scripts/activeMenu.js"></script>
-    <div class="filmList">
-      <ul class="films">
-        <li>Здесь будут фильмы</li>
-        <li>Здесь будут фильмы</li>
-        <li>Здесь будут фильмы</li>
-        <li>Здесь будут фильмы</li>
-        <li>Здесь будут фильмы</li>
-        <li>Здесь будут фильмы</li>
-        <li>Здесь будут фильмы</li>
-        <li>Здесь будут фильмы</li>
-      </ul>
-    </div>
+
+      <div class="table">
+
+          <table>
+              <thead>
+              <tr>
+                  <th scope="col">Навзвание фильма</th>
+                  <th scope="col">Желание смотреть</th>
+              </tr>
+              </thead>
+              <tbody id ="tableBody">
+              <tr>
+              </tr>
+              </tbody>
+          </table>
+      </div>
+      <form id="form-example" action="" method="POST">
+          <label>
+              Название фильма:
+              <input type="text" name="name" id="name" required autofocus>
+          </label>
+          <label>
+              Желание смотреть:
+              <input type="text" name="wish" id="wish" required>
+          </label>
+
+          <button type="submit">Добавить фильм в список</button>
+      </form>
+      <script src="scripts/addNewRowToTable.js"></script>
+
   </main>
 </div>
 </body>
