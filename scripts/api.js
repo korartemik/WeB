@@ -13,7 +13,7 @@ const pagination = document.getElementById('pages');
 const buttons = [...pagination.children];
 
 const loadPhotos = async () => {
-    container.innerHTML = '<img src="https://i.imgur.com/Os63UKo.gif" width="300" height="150" alt="mask">';
+    container.innerHTML = '<img src="https://i.gifer.com/72gi.gif" width=100% height=100% alt="mask">';
 
     try {
         const data = (await getPhotos(sessionStorage.getItem('page'))).slice(0, 8);
